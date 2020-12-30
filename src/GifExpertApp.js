@@ -7,12 +7,15 @@ const GifExpertApp = () => {
 
   return (
     <main>
-      <h2>GifExpertApp</h2>
-      <AddCategory setCategories={setCategories} />
-      <hr />
-      <ol>
-        {categories.map(category => <GifGrid key={category} category={category}/>)}
-      </ol>
+      <header>
+        <h2>Busca un GIF</h2>
+        <AddCategory setCategories={setCategories} />
+      </header>
+      <section className='gifs-container'>
+        <ol>
+          {categories.map(category => <GifGrid key={category} category={category}/>)}
+        </ol>
+      </section>
     </main>
   )
 };

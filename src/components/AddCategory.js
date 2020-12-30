@@ -16,10 +16,9 @@ export const AddCategory = ({ setCategories }) => {
 
   return (
   <form onSubmit={handleSubmit}>
-    <h2>Add Category: {inputValue}</h2>
     <input 
       type='text'
-      placeholder='Add Category'
+      placeholder='Buscar Gif'
       value={inputValue}
       onChange={handleInpuChange}
     />
